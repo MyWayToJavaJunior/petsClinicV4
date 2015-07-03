@@ -5,9 +5,9 @@ package kz.petsclinic.clinic.pets;
  */
 public class Bird extends Pet{
 
-    private final String BIRD_ABILITY = "KILL DOGS";
+    private static final String BIRD_ABILITY = "KILL DOGS";
 
     public Bird(final String nameOfBird) {
-        super(nameOfBird);
+        super(nameOfBird, BIRD_ABILITY);
     }
 }

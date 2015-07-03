@@ -23,4 +23,9 @@ public class Clinic {
     public Person getPersonById(final int indexOfPerson) {
         return this.persons.get(indexOfPerson);
     }
+
+
+    public void remPerson(Person remPerson) {
+        persons.remove(remPerson);
+    }
 }

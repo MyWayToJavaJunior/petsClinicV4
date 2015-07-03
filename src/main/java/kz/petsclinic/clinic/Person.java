@@ -37,6 +37,14 @@ public class Person {
         return this.pet.getClassOfPet();
     }
 
+    public void setNameOfPerson(final String nameOfPerson) {
+        this.nameOfPerson = nameOfPerson;
+    }
+
+    public void setNameOfPet(final String nameOfPet) {
+        this.pet.setNameOfPet(nameOfPet);
+    }
+
     @Override
     public String toString() {
         return "Name of Person: " + this.nameOfPerson + ", " + this.pet.toString();
