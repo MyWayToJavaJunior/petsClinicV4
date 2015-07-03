@@ -11,5 +11,16 @@ public class Clinic {
 
     private ArrayList<Person> persons = new ArrayList<Person>(MAX_PERSON_ON_CLINIC);
 
+    public void addPerson(final Person personForAdd) {
+        this.persons.add(personForAdd);
+    }
 
+
+    public int getCountOfPersons() {
+        return this.persons.size();
+    }
+
+    public Person getPersonById(final int indexOfPerson) {
+        return this.persons.get(indexOfPerson);
+    }
 }
